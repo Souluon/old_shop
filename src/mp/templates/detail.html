@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ trouser.title }}</li>
+    <li class="list-group-item">{{ trouser.quantity }}</li>
+    <li class="list-group-item">{{ trouser.price }}</li>
+    {% for color in colors %}
+    <li class="list-group-item">{{ color.name }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
